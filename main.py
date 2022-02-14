@@ -15,4 +15,5 @@ def convert():
         fname = fname.replace('input', 'output')
         cv2.imwrite(fname, img)
 
+
 convert()
