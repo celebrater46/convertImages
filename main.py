@@ -19,3 +19,5 @@ def convert():
         # root, ext = os.path.splitext(f)
         # basename = os.path.basename(root)
         # img_resize.save(os.path.join(dst_dir, basename + '_half' + ext))
+
+convert()
