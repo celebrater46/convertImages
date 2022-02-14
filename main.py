@@ -9,12 +9,6 @@ def convert():
         img = cv2.imread(f)
         plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
 
-        # PNG -> JPG
-        # fname = f.replace('.png', '.jpg')
-
-        # JPG -> PNG
-        # fname = f.replace('.jpg', '.png')
-
         # .png を含んでいれば PNG を JPEG に変換、そうでなければ逆（拡張子を変えるだけで画像を自動変換してくれる模様）
         fname = f.replace('.png', '.jpg') if '.png' in f else f.replace('.jpg', '.png')
 
